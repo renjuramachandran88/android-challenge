@@ -1,6 +1,6 @@
 <h1 align="center">Android Challenge</h1>
 
-This repository is part of the interviewing process of Keith Eyre for the Androiod Developer position at T-Pro. It contains a collection of challenges to be completed.
+This repository is part of the interviewing process for the Android Developer position at T-Pro. It contains a collection of challenges to be completed.
 
 ## Repository Organization
 
