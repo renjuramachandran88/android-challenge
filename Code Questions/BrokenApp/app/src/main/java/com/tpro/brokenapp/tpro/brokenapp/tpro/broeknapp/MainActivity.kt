@@ -1,50 +1,49 @@
 package com.tpro.brokenapp.tpro.brokenapp.tpro.broeknapp
-import android.app.*
-import android.os.*
-import android.widget.*
+
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.tpro.brokenapp.R
 
+class MainActivity : AppCompatActivity() {
 
+    private lateinit var firstNumber: EditText
+    private lateinit var secondNumber: EditText
+    private lateinit var calculateButton: Button
+    private lateinit var resultTextView: TextView
+    private lateinit var viewModel: CalculationViewModel
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
+        firstNumber = findViewById(R.id.editext1)
+        secondNumber = findViewById(R.id.editext2)
+        calculateButton = findViewById(R.id.button)
+        resultTextView = findViewById(R.id.result)
 
+        viewModel = ViewModelProvider(this).get(CalculationViewModel::class.java)
 
+        calculateButton.setOnClickListener {
+            val text1 = firstNumber.text.toString().trim().lowercase()
+            val text2 = secondNumber.text.toString().trim().lowercase()
+            viewModel.addLargeNumbers(text1, text2)
+        }
 
+        viewModel.result.observe(this) {
+            resultTextView.text = it
+        }
 
-
-class MainActivity
-  : Activity() {
-  override fun onCreate(savedInstanceState:Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
-      findViewById<Button>(R.id.button)!!.setOnClickListener {
-      findViewById<EditText>(R.id.editext1).text.toString().toLowerCase()?.let { text1 ->
-          val text2 = findViewById<EditText>(R.id.editext2).text.toString().toLowerCase()
-          var sum = value(text1).getValue() + value(text2).getValue()
-          findViewById<TextView>(R.id.rsult).text = sum.toString()!!
-      }
-      }
-  }
-
-  override fun onPostCreate(savedInstanceState:Bundle?) { super.onPostCreate(savedInstanceState)
-  }
-}
-
-class value(val integer:String) {
-
-  fun getValue(): Int {
-    if (integer == "0") { return "0".toString().toInt() * 2 } else {
-Thread.sleep(50) //haha
-return integer.toInt()
+        viewModel.error.observe(this) {
+            showErrorToast(it)
+        }
     }
-  }
 
+    private fun showErrorToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
 }
-
-//class value2(val integer: String) {
-//
-//  fun getValue(): Int {
-//    return integer.toInt()
-//  }
-//
-//}

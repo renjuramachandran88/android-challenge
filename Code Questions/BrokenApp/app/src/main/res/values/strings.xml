@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BrokenApp</string>
-    <string name="supersecretkey">C&amp;F)H@McQfTjWnZr4u7x!A%D*G-KaNdR</string> <!-- I can be fired for that -->
+    <string name="enter_number">enter number</string>
+    <string name="sum">sum</string>
+    <string name="valid_numbers_error_text">Please enter valid numbers</string>
+    <string name="invalid_format">Number is in invalid format</string>
 </resources>
