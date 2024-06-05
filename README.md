@@ -17,7 +17,7 @@ The whole test is divided in three levels and the collection of answers to these
 
 | Task | Done | Time Spent |
 | ----------- | :-: | :-: |
-| [Explain the main concept of lambda functions.](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) |   | |
+| [Explain the main concept of lambda functions.](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) | :heavy_check_mark:  | |
 | [What's the difference between `UInt16` and `Int32`?](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) | :heavy_check_mark:  | |
 | [Do you have any experience with functional programming languages?](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) | :heavy_check_mark:  | |
 | [Compile any Kotlin source using `kotlinc`.](https://github.com/T-Pro/android-challenge-elena/blob/master/Code%20Questions/README.md) | :heavy_check_mark:  | |
