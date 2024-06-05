@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpleApp</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="upload_recording">Upload Recording</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="no_data">No data to display</string>
+</resources>
