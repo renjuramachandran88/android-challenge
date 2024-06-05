@@ -28,7 +28,7 @@ The whole test is divided in three levels and the collection of answers to these
 | Task | Done | Time Spent |
 | ----------- | :-: | :-: |
 | [Do you have experience with C++ (JNI) code in Android projects?](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) |   | |
-| [Create a code below that implements the basic concept of dependency injection.](https://github.com/T-Pro/android-challenge-elena/blob/master/Code%20Questions/README.md) |   | |
+| [Create a code below that implements the basic concept of dependency injection.](https://github.com/T-Pro/android-challenge-elena/blob/master/Code%20Questions/README.md) | :heavy_check_mark:  | |
 | [Implement a simple Model-View-Presenter or Model-View-ViewModel structure below and also explain why you choose MVVM over MVP and vice versa.](https://github.com/T-Pro/android-challenge-elena/blob/master/Code%20Questions/README.md) |   | |
 
 ### Third Level
