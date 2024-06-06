@@ -94,11 +94,11 @@ class AudioAdapter(private val audioClickListener: AudioClickListener) :
         }
     }
 
-    fun updatePlayPauseState(audio: AudioResponse?, isPlaying: Boolean, duration: Int) {
+    fun updatePlayPauseState(audio: AudioResponse?, isPlaying: Boolean, duration: Int,  position: Int = 1) {
         this.playingAudio = audio
         this.isPlaying = isPlaying
         this.duration = duration
-        notifyDataSetChanged()
+        notifyItemChanged(currentList.indexOf(playingAudio))
     }
 
     fun updateSeekBar(currentPosition: Int) {

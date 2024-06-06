@@ -28,7 +28,7 @@ class CalculationViewModel : ViewModel() {
             if (!isValidInput(num1, num2)) {
                 _error.postValue("Number is in invalid format")
             } else {
-                val sum = withContext(Dispatchers.IO) {
+                val sum = withContext(Dispatchers.Default) {
                     BigDecimal(num1).add(BigDecimal(num2))
                 }
                 _result.postValue(sum.toString())
